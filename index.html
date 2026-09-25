@@ -1,1 +1,316 @@
-<script>document.write(decodeURIComponent(escape(atob("PCFET0NUWVBFIGh0bWw+CjxodG1sIGxhbmc9ImVuIj4KPGhlYWQ+CiAgPG1ldGEgY2hhcnNldD0iVVRGLTgiPgogIDxtZXRhIG5hbWU9InZpZXdwb3J0IiBjb250ZW50PSJ3aWR0aD1kZXZpY2Utd2lkdGgsIGluaXRpYWwtc2NhbGU9MS4wIj4KICA8bWV0YSBuYW1lPSJ0aGVtZS1jb2xvciIgY29udGVudD0iI2RmZTdmMiI+CiAgPHRpdGxlPkFudXJhZyBEZXZuYXRoIOKAlCBTb2Z0d2FyZSBFbmdpbmVlcjwvdGl0bGU+CiAgPG1ldGEgbmFtZT0iZGVzY3JpcHRpb24iIGNvbnRlbnQ9IkFudXJhZyBEZXZuYXRoIOKAlCBTb2Z0d2FyZSBlbmdpbmVlciBidWlsZGluZyBjb21wbGlhbmNlLCBwYXlyb2xsLCBhbmFseXRpY3MsIGFuZCBjbG91ZCBjb3N0IHN5c3RlbXMuIj4KICA8bGluayByZWw9InByZWNvbm5lY3QiIGhyZWY9Imh0dHBzOi8vZm9udHMuZ29vZ2xlYXBpcy5jb20iPgogIDxsaW5rIHJlbD0icHJlY29ubmVjdCIgaHJlZj0iaHR0cHM6Ly9mb250cy5nc3RhdGljLmNvbSIgY3Jvc3NvcmlnaW4+CiAgPGxpbmsgaHJlZj0iaHR0cHM6Ly9mb250cy5nb29nbGVhcGlzLmNvbS9jc3MyP2ZhbWlseT1ETStTYW5zOndnaHRANDAwOzUwMDs2MDA7NzAwJmZhbWlseT1JbnRlcjp3Z2h0QDQwMDs1MDA7NjAwJmRpc3BsYXk9c3dhcCIgcmVsPSJzdHlsZXNoZWV0Ij4KICAKPC9oZWFkPgo8Ym9keT4KICA8ZGl2IGNsYXNzPSJhbWJpZW50IiBhcmlhLWhpZGRlbj0idHJ1ZSI+CiAgICA8c3BhbiBjbGFzcz0ib3JiIG9yYi1hIj48L3NwYW4+CiAgICA8c3BhbiBjbGFzcz0ib3JiIG9yYi1iIj48L3NwYW4+CiAgICA8c3BhbiBjbGFzcz0ib3JiIG9yYi1jIj48L3NwYW4+CiAgICA8c3BhbiBjbGFzcz0ib3JiIG9yYi1kIj48L3NwYW4+CiAgICA8c3BhbiBjbGFzcz0iYW1iaWVudC1ub2lzZSI+PC9zcGFuPgogIDwvZGl2PgoKICA8ZGl2IGNsYXNzPSJwYWdlLXNoZWxsIiBpZD0idG9wIj4KICAgIDxoZWFkZXIgY2xhc3M9InRvcGJhciBnbGFzcy1wYW5lbCI+CiAgICAgIDxhIGNsYXNzPSJicmFuZCIgaHJlZj0iI3RvcCIgYXJpYS1sYWJlbD0iQW51cmFnIERldm5hdGggaG9tZSI+CiAgICAgICAgPHNwYW4gY2xhc3M9ImJyYW5kLW1hcmsiPkFEPC9zcGFuPgogICAgICAgIDxzcGFuIGNsYXNzPSJicmFuZC1jb3B5Ij4KICAgICAgICAgIDxzdHJvbmc+QW51cmFnIERldm5hdGg8L3N0cm9uZz4KICAgICAgICAgIDxzbWFsbD5Tb2Z0d2FyZSBFbmdpbmVlcjwvc21hbGw+CiAgICAgICAgPC9zcGFuPgogICAgICA8L2E+CgogICAgICA8bmF2IGNsYXNzPSJkZXNrdG9wLW5hdiIgYXJpYS1sYWJlbD0iUHJpbWFyeSBuYXZpZ2F0aW9uIj4KICAgICAgICA8YSBjbGFzcz0ibmF2LWxpbmsgYWN0aXZlIiBocmVmPSIjaG9tZSI+SG9tZTwvYT4KICAgICAgICA8YSBjbGFzcz0ibmF2LWxpbmsiIGhyZWY9IiNhYm91dCI+QWJvdXQ8L2E+CiAgICAgICAgPGEgY2xhc3M9Im5hdi1saW5rIiBocmVmPSIjZXhwZXJpZW5jZSI+RXhwZXJpZW5jZTwvYT4KICAgICAgICA8YSBjbGFzcz0ibmF2LWxpbmsiIGhyZWY9IiN3b3JrIj5Xb3JrPC9hPgogICAgICAgIDxhIGNsYXNzPSJuYXYtbGluayIgaHJlZj0iI2NvbnRhY3QiPkNvbnRhY3Q8L2E+CiAgICAgIDwvbmF2PgoKICAgICAgPGEgY2xhc3M9InRvcGJhci1hY3Rpb24gZ2xhc3MtcGlsbCIgaHJlZj0ibWFpbHRvOmFudXJhZy5zb2Z0bmV0QGdtYWlsLmNvbSI+CiAgICAgICAgPHNwYW4gY2xhc3M9Im9ubGluZS1kb3QiPjwvc3Bhbj4KICAgICAgICBBdmFpbGFibGUKICAgICAgICA8c3BhbiBjbGFzcz0iYXJyb3ciPuKGlzwvc3Bhbj4KICAgICAgPC9hPgogICAgPC9oZWFkZXI+CgogICAgPG1haW4+CiAgICAgIDxzZWN0aW9uIGNsYXNzPSJoZXJvIHNjcmVlbi1zZWN0aW9uIiBpZD0iaG9tZSI+CiAgICAgICAgPGRpdiBjbGFzcz0iaGVyby1jb3B5Ij4KICAgICAgICAgIDxkaXYgY2xhc3M9InN0YXR1cy1jaGlwIGdsYXNzLXBpbGwgcmV2ZWFsIj4KICAgICAgICAgICAgPHNwYW4gY2xhc3M9InN0YXR1cy1vcmIiPjwvc3Bhbj4KICAgICAgICAgICAgQnVpbGRpbmcgcmVsaWFibGUgc3lzdGVtcyBmcm9tIE5vaWRhLCBJbmRpYQogICAgICAgICAgPC9kaXY+CgogICAgICAgICAgPGgxIGNsYXNzPSJoZXJvLXRpdGxlIHJldmVhbCI+CiAgICAgICAgICAgIEkgYnVpbGQgdGhlIHF1aWV0PGJyPgogICAgICAgICAgICBzeXN0ZW1zIGJlaGluZDxicj4KICAgICAgICAgICAgPHNwYW4+aW1wb3J0YW50IHdvcmsuPC9zcGFuPgogICAgICAgICAgPC9oMT4KCiAgICAgICAgICA8cCBjbGFzcz0iaGVyby1kZXNjcmlwdGlvbiByZXZlYWwiPgogICAgICAgICAgICBGdWxsLXN0YWNrIGVuZ2luZWVyIGF0IDxzdHJvbmc+VGhpbmtzeXMgSW5jLjwvc3Ryb25nPiwgc2hpcHBpbmcgcHJvZHVjdGlvbiBzb2Z0d2FyZSB3aXRoIENvbGRGdXNpb24sCiAgICAgICAgICAgIFB5dGhvbiwgSmF2YVNjcmlwdCwgYW5kIFNRTCBmb3IgaGVhbHRoY2FyZSwgSFIsIGdyYW50IG1hbmFnZW1lbnQsIGFuZCBjbG91ZC1jb3N0IHBsYXRmb3Jtcy4KICAgICAgICAgIDwvcD4KCiAgICAgICAgICA8ZGl2IGNsYXNzPSJoZXJvLWFjdGlvbnMgcmV2ZWFsIj4KICAgICAgICAgICAgPGEgY2xhc3M9InByaW1hcnktYnV0dG9uIGdsYXNzLWJ1dHRvbiIgaHJlZj0iI3dvcmsiPkV4cGxvcmUgbXkgd29yayA8c3Bhbj7ihpc8L3NwYW4+PC9hPgogICAgICAgICAgICA8YSBjbGFzcz0ic2Vjb25kYXJ5LWJ1dHRvbiBnbGFzcy1idXR0b24iIGhyZWY9Im1haWx0bzphbnVyYWcuc29mdG5ldEBnbWFpbC5jb20iPkxldOKAmXMgdGFsazwvYT4KICAgICAgICAgIDwvZGl2PgoKICAgICAgICAgIDxkaXYgY2xhc3M9Im1ldHJpYy1yb3cgcmV2ZWFsIiBhcmlhLWxhYmVsPSJDYXJlZXIgaGlnaGxpZ2h0cyI+CiAgICAgICAgICAgIDxkaXYgY2xhc3M9Im1ldHJpYyBnbGFzcy1jYXJkIj4KICAgICAgICAgICAgICA8c3Ryb25nPjUrPC9zdHJvbmc+CiAgICAgICAgICAgICAgPHNwYW4+cHJvZHVjdGlvbiBwbGF0Zm9ybXM8L3NwYW4+CiAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICA8ZGl2IGNsYXNzPSJtZXRyaWMgZ2xhc3MtY2FyZCI+CiAgICAgICAgICAgICAgPHN0cm9uZz45OS45JTwvc3Ryb25nPgogICAgICAgICAgICAgIDxzcGFuPnVwdGltZSBtYWludGFpbmVkPC9zcGFuPgogICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgPGRpdiBjbGFzcz0ibWV0cmljIGdsYXNzLWNhcmQiPgogICAgICAgICAgICAgIDxzdHJvbmc+MzAlPC9zdHJvbmc+CiAgICAgICAgICAgICAgPHNwYW4+ZmFzdGVyIHJlc3BvbnNlIHRpbWVzPC9zcGFuPgogICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgIDwvZGl2PgogICAgICAgIDwvZGl2PgoKICAgICAgICA8ZGl2IGNsYXNzPSJoZXJvLXZpc3VhbCByZXZlYWwiIGFyaWEtbGFiZWw9IkxpcXVpZCBnbGFzcyBwb3J0Zm9saW8gcHJldmlldyI+CiAgICAgICAgICA8ZGl2IGNsYXNzPSJmbG9hdGluZy1vcmJpdCBvcmJpdC1vbmUiPjwvZGl2PgogICAgICAgICAgPGRpdiBjbGFzcz0iZmxvYXRpbmctb3JiaXQgb3JiaXQtdHdvIj48L2Rpdj4KCiAgICAgICAgICA8ZGl2IGNsYXNzPSJnbGFzcy1jYXJkIGlkZW50aXR5LWNhcmQgZGVwdGgtY2FyZCI+CiAgICAgICAgICAgIDxkaXYgY2xhc3M9ImNhcmQtc2hlZW4iPjwvZGl2PgogICAgICAgICAgICA8ZGl2IGNsYXNzPSJpZGVudGl0eS10b3AiPgogICAgICAgICAgICAgIDxzcGFuIGNsYXNzPSJtaWNyby1sYWJlbCI+Q1VSUkVOVExZPC9zcGFuPgogICAgICAgICAgICAgIDxzcGFuIGNsYXNzPSJsaXZlLWxhYmVsIj48aT48L2k+IExpdmU8L3NwYW4+CiAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICA8ZGl2IGNsYXNzPSJpZGVudGl0eS1tYWluIj4KICAgICAgICAgICAgICA8ZGl2IGNsYXNzPSJhdmF0YXIiPkFEPC9kaXY+CiAgICAgICAgICAgICAgPGRpdj4KICAgICAgICAgICAgICAgIDxoMj5Tb2Z0d2FyZSBFbmdpbmVlcjwvaDI+CiAgICAgICAgICAgICAgICA8cD5UaGlua3N5cyBJbmMuIMK3IE5vaWRhLCBJbmRpYTwvcD4KICAgICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICAgIDxkaXYgY2xhc3M9ImlkZW50aXR5LWZvb3RlciI+CiAgICAgICAgICAgICAgPHNwYW4+Q29sZEZ1c2lvbjwvc3Bhbj48c3Bhbj5QeXRob248L3NwYW4+PHNwYW4+U1FMPC9zcGFuPgogICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgIDwvZGl2PgoKICAgICAgICAgIDxkaXYgY2xhc3M9ImdsYXNzLWNhcmQgbWluaS1jYXJkIG1pbmktY2FyZC10b3AgZGVwdGgtY2FyZCI+CiAgICAgICAgICAgIDxkaXYgY2xhc3M9Im1pbmktaWNvbiI+4oaXPC9kaXY+CiAgICAgICAgICAgIDxkaXY+CiAgICAgICAgICAgICAgPHN0cm9uZz4zMCU8L3N0cm9uZz4KICAgICAgICAgICAgICA8c3Bhbj5xdWVyeSByZXNwb25zZSBnYWluPC9zcGFuPgogICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgIDwvZGl2PgoKICAgICAgICAgIDxkaXYgY2xhc3M9ImdsYXNzLWNhcmQgbWluaS1jYXJkIG1pbmktY2FyZC1ib3R0b20gZGVwdGgtY2FyZCI+CiAgICAgICAgICAgIDxkaXYgY2xhc3M9Im1pbmktZ3JpZC1pY29uIj7ijJg8L2Rpdj4KICAgICAgICAgICAgPGRpdj4KICAgICAgICAgICAgICA8c3Ryb25nPjIwKzwvc3Ryb25nPgogICAgICAgICAgICAgIDxzcGFuPnByb2R1Y3Rpb24gcmVsZWFzZXM8L3NwYW4+CiAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgPC9kaXY+CgogICAgICAgICAgPGRpdiBjbGFzcz0iZ2xvc3MtZGlzYyI+PC9kaXY+CiAgICAgICAgPC9kaXY+CiAgICAgIDwvc2VjdGlvbj4KCiAgICAgIDxzZWN0aW9uIGNsYXNzPSJzY3JlZW4tc2VjdGlvbiBzZWN0aW9uLXBhbmVsIiBpZD0iYWJvdXQiPgogICAgICAgIDxkaXYgY2xhc3M9InNlY3Rpb24taGVhZGluZyByZXZlYWwiPgogICAgICAgICAgPGRpdj4KICAgICAgICAgICAgPHNwYW4gY2xhc3M9ImV5ZWJyb3ciPjAxIMK3IEFCT1VUPC9zcGFuPgogICAgICAgICAgICA8aDI+QSBwcmFjdGljYWwgZW5naW5lZXI8YnI+d2l0aCBhIHN5c3RlbXMgbWluZHNldC48L2gyPgogICAgICAgICAgPC9kaXY+CiAgICAgICAgICA8cD5SZWxpYWJsZSBzb2Z0d2FyZSBpcyB1c3VhbGx5IGludmlzaWJsZS4gTXkgd29yayBpcyB0byBrZWVwIGl0IHRoYXQgd2F5LjwvcD4KICAgICAgICA8L2Rpdj4KCiAgICAgICAgPGRpdiBjbGFzcz0iYWJvdXQtbGF5b3V0Ij4KICAgICAgICAgIDxhcnRpY2xlIGNsYXNzPSJnbGFzcy1jYXJkIHN0b3J5LWNhcmQgcmV2ZWFsIj4KICAgICAgICAgICAgPGRpdiBjbGFzcz0iY2FyZC10b3BsaW5lIj4KICAgICAgICAgICAgICA8c3Bhbj5QUk9GSUxFPC9zcGFuPgogICAgICAgICAgICAgIDxzcGFuPk5PSURBIMK3IElORElBPC9zcGFuPgogICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgPHA+CiAgICAgICAgICAgICAgSSBidWlsZCBhbmQgbWFpbnRhaW4gc3lzdGVtcyB0aGF0IG9yZ2FuaXphdGlvbnMgcmVseSBvbiBldmVyeSBkYXkg4oCUIHBheXJvbGwgY2FsY3VsYXRpb25zLAogICAgICAgICAgICAgIGNvbXBsaWFuY2UgY2hlY2tzLCBhdWRpdCB0cmFpbHMsIGFuYWx5dGljcywgYW5kIGNvc3QgcmVwb3J0aW5nLiBJIGNhcmUgYWJvdXQgcmVhZGFibGUgY29kZSwKICAgICAgICAgICAgICBmYXN0IGRhdGFiYXNlcywgcHJlZGljdGFibGUgcmVsZWFzZXMsIGFuZCBwcm9kdWN0cyB0aGF0IHN0YXkgZGVwZW5kYWJsZSBhcyB0aGV5IGdyb3cuCiAgICAgICAgICAgIDwvcD4KICAgICAgICAgICAgPGRpdiBjbGFzcz0icXVvdGUtbWFyayI+4oCcPC9kaXY+CiAgICAgICAgICAgIDxzcGFuIGNsYXNzPSJxdW90ZS1jb3B5Ij5NYWtlIHRoZSBjb21wbGV4IGZlZWwgY2FsbS48L3NwYW4+CiAgICAgICAgICA8L2FydGljbGU+CgogICAgICAgICAgPGRpdiBjbGFzcz0ic2tpbGxzLXN0YWNrIHJldmVhbCI+CiAgICAgICAgICAgIDxkaXYgY2xhc3M9ImdsYXNzLWNhcmQgc2tpbGwtY2FyZCI+CiAgICAgICAgICAgICAgPGRpdiBjbGFzcz0ic2tpbGwtaW5kZXgiPjAxPC9kaXY+CiAgICAgICAgICAgICAgPGRpdj48c3Bhbj5Gcm9udGVuZDwvc3Bhbj48c3Ryb25nPkhUTUw1IMK3IENTUzMgwrcgSmF2YVNjcmlwdCDCtyBSZXNwb25zaXZlIFVJPC9zdHJvbmc+PC9kaXY+CiAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICA8ZGl2IGNsYXNzPSJnbGFzcy1jYXJkIHNraWxsLWNhcmQiPgogICAgICAgICAgICAgIDxkaXYgY2xhc3M9InNraWxsLWluZGV4Ij4wMjwvZGl2PgogICAgICAgICAgICAgIDxkaXY+PHNwYW4+QmFja2VuZDwvc3Bhbj48c3Ryb25nPkNvbGRGdXNpb24gwrcgUHl0aG9uIMK3IFBIUCDCtyBOb2RlLmpzIMK3IFJFU1QgQVBJczwvc3Ryb25nPjwvZGl2PgogICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgPGRpdiBjbGFzcz0iZ2xhc3MtY2FyZCBza2lsbC1jYXJkIj4KICAgICAgICAgICAgICA8ZGl2IGNsYXNzPSJza2lsbC1pbmRleCI+MDM8L2Rpdj4KICAgICAgICAgICAgICA8ZGl2PjxzcGFuPkRhdGE8L3NwYW4+PHN0cm9uZz5NUyBTUUwgU2VydmVyIMK3IE1vbmdvREIgwrcgUXVlcnkgdHVuaW5nIMK3IFNjaGVtYSBkZXNpZ248L3N0cm9uZz48L2Rpdj4KICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICAgIDxkaXYgY2xhc3M9ImdsYXNzLWNhcmQgc2tpbGwtY2FyZCI+CiAgICAgICAgICAgICAgPGRpdiBjbGFzcz0ic2tpbGwtaW5kZXgiPjA0PC9kaXY+CiAgICAgICAgICAgICAgPGRpdj48c3Bhbj5EZXZPcHM8L3NwYW4+PHN0cm9uZz5HaXQgwrcgR2l0SHViIMK3IEdpdExhYiDCtyBDSS9DRDwvc3Ryb25nPjwvZGl2PgogICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgIDwvZGl2PgogICAgICAgIDwvZGl2PgogICAgICA8L3NlY3Rpb24+CgogICAgICA8c2VjdGlvbiBjbGFzcz0ic2NyZWVuLXNlY3Rpb24gc2VjdGlvbi1wYW5lbCIgaWQ9ImV4cGVyaWVuY2UiPgogICAgICAgIDxkaXYgY2xhc3M9InNlY3Rpb24taGVhZGluZyByZXZlYWwiPgogICAgICAgICAgPGRpdj4KICAgICAgICAgICAgPHNwYW4gY2xhc3M9ImV5ZWJyb3ciPjAyIMK3IEVYUEVSSUVOQ0U8L3NwYW4+CiAgICAgICAgICAgIDxoMj5SZWNlbnQgY2hhcHRlcnMsPGJyPm1lYXN1cmVkIGJ5IHNoaXBwZWQgd29yay48L2gyPgogICAgICAgICAgPC9kaXY+CiAgICAgICAgICA8cD5Qcm9kdWN0aW9uIHJlbGVhc2VzLCBwZXJmb3JtYW5jZSB3b3JrLCBhbmQgYSBncm93aW5nIGZvY3VzIG9uIGRlcGVuZGFibGUgc3lzdGVtcy48L3A+CiAgICAgICAgPC9kaXY+CgogICAgICAgIDxkaXYgY2xhc3M9ImV4cGVyaWVuY2Utc3RhY2siPgogICAgICAgICAgPGFydGljbGUgY2xhc3M9ImdsYXNzLWNhcmQgZXhwZXJpZW5jZS1jYXJkIGFjdGl2ZS1leHBlcmllbmNlIHJldmVhbCI+CiAgICAgICAgICAgIDxkaXYgY2xhc3M9ImV4cGVyaWVuY2UteWVhciI+REVDIDIwMjUg4oCUIE5PVzwvZGl2PgogICAgICAgICAgICA8ZGl2IGNsYXNzPSJleHBlcmllbmNlLWJvZHkiPgogICAgICAgICAgICAgIDxkaXY+CiAgICAgICAgICAgICAgICA8c3BhbiBjbGFzcz0iY29tcGFueS1raWNrZXIiPjxpPjwvaT4gQ1VSUkVOVCBST0xFPC9zcGFuPgogICAgICAgICAgICAgICAgPGgzPlNvZnR3YXJlIEVuZ2luZWVyIMK3IFRoaW5rc3lzIEluYy48L2gzPgogICAgICAgICAgICAgICAgPHA+Tm9pZGEsIFV0dGFyIFByYWRlc2g8L3A+CiAgICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICAgICAgPGRpdiBjbGFzcz0iZXhwZXJpZW5jZS1jb3B5Ij5EZXZlbG9waW5nIGFuZCBtYWludGFpbmluZyBDb2xkRnVzaW9uLWJhc2VkIG1vZHVsZXMgYWNyb3NzIHJlZ3VsYXIgcHJvZHVjdGlvbiByZWxlYXNlcywga2VlcGluZyBzeXN0ZW0gYXZhaWxhYmlsaXR5IGhpZ2ggd2hpbGUgaXRlcmF0aW5nIG9uIGxpdmUgZmVhdHVyZXMuPC9kaXY+CiAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgPC9hcnRpY2xlPgoKICAgICAgICAgIDxhcnRpY2xlIGNsYXNzPSJnbGFzcy1jYXJkIGV4cGVyaWVuY2UtY2FyZCByZXZlYWwiPgogICAgICAgICAgICA8ZGl2IGNsYXNzPSJleHBlcmllbmNlLXllYXIiPkZFQiAyMDI0IOKAlCBERUMgMjAyNTwvZGl2PgogICAgICAgICAgICA8ZGl2IGNsYXNzPSJleHBlcmllbmNlLWJvZHkiPgogICAgICAgICAgICAgIDxkaXY+CiAgICAgICAgICAgICAgICA8c3BhbiBjbGFzcz0iY29tcGFueS1raWNrZXIiPkFST1NZUzwvc3Bhbj4KICAgICAgICAgICAgICAgIDxoMz5Tb2Z0d2FyZSBFbmdpbmVlciDCtyBBcm9zeXM8L2gzPgogICAgICAgICAgICAgICAgPHA+QmhpbGFpLCBDaGhhdHRpc2dhcmg8L3A+CiAgICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICAgICAgPGRpdiBjbGFzcz0iZXhwZXJpZW5jZS1jb3B5Ij5TaGlwcGVkIDIwKyBwcm9kdWN0aW9uIHJlbGVhc2VzIGFjcm9zcyBDb2xkRnVzaW9uIG1vZHVsZXMsIG1haW50YWluZWQgOTkuOSUgdXB0aW1lLCBhbmQgb3B0aW1pemVkIFNRTCBxdWVyaWVzIHRvIGN1dCBhdmVyYWdlIHJlc3BvbnNlIHRpbWUgYnkgMzAlLjwvZGl2PgogICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgIDwvYXJ0aWNsZT4KCiAgICAgICAgICA8YXJ0aWNsZSBjbGFzcz0iZ2xhc3MtY2FyZCBleHBlcmllbmNlLWNhcmQgcmV2ZWFsIj4KICAgICAgICAgICAgPGRpdiBjbGFzcz0iZXhwZXJpZW5jZS15ZWFyIj5NQVIgMjAyNCDigJQgTUFSIDIwMjc8L2Rpdj4KICAgICAgICAgICAgPGRpdiBjbGFzcz0iZXhwZXJpZW5jZS1ib2R5Ij4KICAgICAgICAgICAgICA8ZGl2PgogICAgICAgICAgICAgICAgPHNwYW4gY2xhc3M9ImNvbXBhbnkta2lja2VyIj5BRE9CRTwvc3Bhbj4KICAgICAgICAgICAgICAgIDxoMz5BZG9iZSBDZXJ0aWZpZWQgUHJvZmVzc2lvbmFsIOKAlCBDb2xkRnVzaW9uPC9oMz4KICAgICAgICAgICAgICAgIDxwPjxhIGhyZWY9Imh0dHBzOi8vY2VydGlmaWNhdGlvbi5hZG9iZS5jb20vY3JlZGVudGlhbC92ZXJpZnkvOTdjZmU1NTMtZjdlOC0xMWVmLTk4ODMtNDIwMTBhNDAwMDJhIiB0YXJnZXQ9Il9ibGFuayIgcmVsPSJub29wZW5lciI+VmVyaWZ5IGNyZWRlbnRpYWwg4oaXPC9hPjwvcD4KICAgICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgICA8ZGl2IGNsYXNzPSJleHBlcmllbmNlLWNvcHkiPkEgZm9jdXNlZCBjZXJ0aWZpY2F0aW9uIG1pbGVzdG9uZSBzdXBwb3J0aW5nIHByb2R1Y3Rpb24gQ29sZEZ1c2lvbiB3b3JrIGFuZCBhIGRlZXBlciB1bmRlcnN0YW5kaW5nIG9mIHRoZSBwbGF0Zm9ybS48L2Rpdj4KICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICA8L2FydGljbGU+CiAgICAgICAgPC9kaXY+CiAgICAgIDwvc2VjdGlvbj4KCiAgICAgIDxzZWN0aW9uIGNsYXNzPSJzY3JlZW4tc2VjdGlvbiBzZWN0aW9uLXBhbmVsIiBpZD0id29yayI+CiAgICAgICAgPGRpdiBjbGFzcz0ic2VjdGlvbi1oZWFkaW5nIHJldmVhbCI+CiAgICAgICAgICA8ZGl2PgogICAgICAgICAgICA8c3BhbiBjbGFzcz0iZXllYnJvdyI+MDMgwrcgU0VMRUNURUQgV09SSzwvc3Bhbj4KICAgICAgICAgICAgPGgyPlNpeCBzeXN0ZW1zLjxicj5WZXJ5IGRpZmZlcmVudCBlZGdlIGNhc2VzLjwvaDI+CiAgICAgICAgICA8L2Rpdj4KICAgICAgICAgIDxwPkEgY2xvc2VyIGxvb2sgYXQgdGhlIHByb2R1Y3RzIGFuZCBwbGF0Zm9ybXMgdGhhdCBzaGFwZWQgbXkgZGF5LXRvLWRheSBlbmdpbmVlcmluZyB3b3JrLjwvcD4KICAgICAgICA8L2Rpdj4KCiAgICAgICAgPGRpdiBjbGFzcz0icHJvamVjdHMtZ3JpZCI+CiAgICAgICAgICA8YXJ0aWNsZSBjbGFzcz0icHJvamVjdC1jYXJkIGdsYXNzLWNhcmQgcmV2ZWFsIiBkYXRhLXByb2plY3Q9IkFtZXJpY2EgTGVhcm5zIj4KICAgICAgICAgICAgPGRpdiBjbGFzcz0icHJvamVjdC1oZWFkZXIiPgogICAgICAgICAgICAgIDxzcGFuIGNsYXNzPSJwcm9qZWN0LW51bWJlciI+MDE8L3NwYW4+CiAgICAgICAgICAgICAgPHNwYW4gY2xhc3M9InByb2plY3QtdHlwZSI+U0FBUyDCtyBHUkFOVCBNQU5BR0VNRU5UPC9zcGFuPgogICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgPGRpdiBjbGFzcz0icHJvamVjdC1ib2R5Ij4KICAgICAgICAgICAgICA8ZGl2IGNsYXNzPSJwcm9qZWN0LXRpdGxlLXJvdyI+PGgzPkFtZXJpY2EgTGVhcm5zPC9oMz48c3BhbiBjbGFzcz0icHJvamVjdC1zdGF0dXMiPk9OLVRJTUU8L3NwYW4+PC9kaXY+CiAgICAgICAgICAgICAgPHA+SW1wYWN0IFN1aXRlICZhbXA7IEdyYW50IEdhdGV3YXkgZm9yIEFtZXJpQ29ycHMsIG5vbi1wcm9maXRzLCBhbmQgc3RhdGUgZ3JhbnRtYWtpbmcgY29tbWlzc2lvbnMuPC9wPgogICAgICAgICAgICAgIDx1bD4KICAgICAgICAgICAgICAgIDxsaT5SZWFsLXRpbWUgdGltZXNoZWV0IHRyYWNraW5nLCBwYWNpbmcgY2FsY3VsYXRvcnMsIGFuZCBhdWRpdCBhbGVydHM8L2xpPgogICAgICAgICAgICAgICAgPGxpPkUtc2lnbmF0dXJlIHdvcmtmbG93cyBhbmQgYXVkaXQtcmVhZHkgZGlnaXRhbCBhcmNoaXZlczwvbGk+CiAgICAgICAgICAgICAgICA8bGk+R3JhbnQgYXBwbGljYXRpb24sIGJsaW5kZWQgcmV2aWV3LCBhbmQgd2VpZ2h0ZWQgcnVicmljIHRvb2xpbmc8L2xpPgogICAgICAgICAgICAgIDwvdWw+CiAgICAgICAgICAgICAgPGEgaHJlZj0iaHR0cHM6Ly9hbWVyaWNhbGVhcm5zLmNvbS8iIHRhcmdldD0iX2JsYW5rIiByZWw9Im5vb3BlbmVyIj5PcGVuIHByb2R1Y3Qg4oaXPC9hPgogICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgIDwvYXJ0aWNsZT4KCiAgICAgICAgICA8YXJ0aWNsZSBjbGFzcz0icHJvamVjdC1jYXJkIGdsYXNzLWNhcmQgcmV2ZWFsIiBkYXRhLXByb2plY3Q9IkNIQVJUIj4KICAgICAgICAgICAgPGRpdiBjbGFzcz0icHJvamVjdC1oZWFkZXIiPgogICAgICAgICAgICAgIDxzcGFuIGNsYXNzPSJwcm9qZWN0LW51bWJlciI+MDI8L3NwYW4+CiAgICAgICAgICAgICAgPHNwYW4gY2xhc3M9InByb2plY3QtdHlwZSI+SEVBTFRIQ0FSRSDCtyBBTkFMWVRJQ1M8L3NwYW4+CiAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICA8ZGl2IGNsYXNzPSJwcm9qZWN0LWJvZHkiPgogICAgICAgICAgICAgIDxkaXYgY2xhc3M9InByb2plY3QtdGl0bGUtcm93Ij48aDM+Q0hBUlQ8L2gzPjxzcGFuIGNsYXNzPSJwcm9qZWN0LXN0YXR1cyI+RkVFREJBQ0sgTE9PUFM8L3NwYW4+PC9kaXY+CiAgICAgICAgICAgICAgPHA+Q2xpbmljYWwgJmFtcDsgSGVhbHRoIEFuYWx5dGljcyBSZXBvcnRpbmcgVG9vbCBmb3IgaGVhbHRoY2FyZSBwcm92aWRlcnMgYW5kIGdyYW50LWZ1bmRlZCBvcmdhbml6YXRpb25zLjwvcD4KICAgICAgICAgICAgICA8dWw+CiAgICAgICAgICAgICAgICA8bGk+UGF0aWVudC1jZW50ZXJlZCBkYXRhIGNvbGxlY3Rpb24gd2l0aCBkeW5hbWljIHRyZWF0bWVudCBhZGp1c3RtZW50PC9saT4KICAgICAgICAgICAgICAgIDxsaT5BZ2dyZWdhdGVkIGRhc2hib2FyZHMgZm9yIGNsaW5pY2FsIHRlYW1zIGFuZCBmdW5kZXJzPC9saT4KICAgICAgICAgICAgICAgIDxsaT5Mb25naXR1ZGluYWwgaW50ZXJ2ZW50aW9uIHRyYWNraW5nIGZvciByZXNlYXJjaCBwcm9ncmFtczwvbGk+CiAgICAgICAgICAgICAgPC91bD4KICAgICAgICAgICAgICA8YSBocmVmPSJodHRwczovL3d3dy5jaGFydHByb2dyYW0ub3JnL3N5c3RlbS9sb2dpbi5jZm0iIHRhcmdldD0iX2JsYW5rIiByZWw9Im5vb3BlbmVyIj5PcGVuIHByb2R1Y3Qg4oaXPC9hPgogICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgIDwvYXJ0aWNsZT4KCiAgICAgICAgICA8YXJ0aWNsZSBjbGFzcz0icHJvamVjdC1jYXJkIGdsYXNzLWNhcmQgcmV2ZWFsIiBkYXRhLXByb2plY3Q9Ik15V29ya015RGF5Ij4KICAgICAgICAgICAgPGRpdiBjbGFzcz0icHJvamVjdC1oZWFkZXIiPgogICAgICAgICAgICAgIDxzcGFuIGNsYXNzPSJwcm9qZWN0LW51bWJlciI+MDM8L3NwYW4+CiAgICAgICAgICAgICAgPHNwYW4gY2xhc3M9InByb2plY3QtdHlwZSI+SFJNUyDCtyBQQVlST0xMPC9zcGFuPgogICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgPGRpdiBjbGFzcz0icHJvamVjdC1ib2R5Ij4KICAgICAgICAgICAgICA8ZGl2IGNsYXNzPSJwcm9qZWN0LXRpdGxlLXJvdyI+PGgzPk15V29ya015RGF5PC9oMz48c3BhbiBjbGFzcz0icHJvamVjdC1zdGF0dXMiPjk5LjklIEFDQ1VSQUNZPC9zcGFuPjwvZGl2PgogICAgICAgICAgICAgIDxwPk1vZHVsYXIgSFJNUyBhdXRvbWF0aW5nIHBheXJvbGwsIGF0dGVuZGFuY2UsIHByb2plY3QgYmlsbGluZywgYW5kIHN0YXR1dG9yeSBjb21wbGlhbmNlLjwvcD4KICAgICAgICAgICAgICA8dWw+CiAgICAgICAgICAgICAgICA8bGk+U2FsYXJ5IGVuZ2luZSBmb3IgUEYsIEVTSUMsIFBULCBhbmQgR1NUIHdvcmtmbG93czwvbGk+CiAgICAgICAgICAgICAgICA8bGk+V2ViIGNoZWNrLWluLCBHUFMgdHJhY2tpbmcsIGFuZCBiaW9tZXRyaWMgc3luYzwvbGk+CiAgICAgICAgICAgICAgICA8bGk+RW1wbG95ZWUgc2VsZi1zZXJ2aWNlIGZvciBwYXlzbGlwcywgdGF4LCBhbmQgbGVhdmU8L2xpPgogICAgICAgICAgICAgIDwvdWw+CiAgICAgICAgICAgICAgPGEgaHJlZj0iaHR0cHM6Ly9teXdvcmtteWRheS5jb20vIiB0YXJnZXQ9Il9ibGFuayIgcmVsPSJub29wZW5lciI+T3BlbiBwcm9kdWN0IOKGlzwvYT4KICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICA8L2FydGljbGU+CgogICAgICAgICAgPGFydGljbGUgY2xhc3M9InByb2plY3QtY2FyZCBnbGFzcy1jYXJkIHJldmVhbCIgZGF0YS1wcm9qZWN0PSJDbG91ZEZvcmVzdFgiPgogICAgICAgICAgICA8ZGl2IGNsYXNzPSJwcm9qZWN0LWhlYWRlciI+CiAgICAgICAgICAgICAgPHNwYW4gY2xhc3M9InByb2plY3QtbnVtYmVyIj4wNDwvc3Bhbj4KICAgICAgICAgICAgICA8c3BhbiBjbGFzcz0icHJvamVjdC10eXBlIj5GSU5PUFMgwrcgQ0xPVUQgQ09TVDwvc3Bhbj4KICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICAgIDxkaXYgY2xhc3M9InByb2plY3QtYm9keSI+CiAgICAgICAgICAgICAgPGRpdiBjbGFzcz0icHJvamVjdC10aXRsZS1yb3ciPjxoMz5DbG91ZEZvcmVzdFg8L2gzPjxzcGFuIGNsYXNzPSJwcm9qZWN0LXN0YXR1cyI+MjDigJMzMCUgUkVEVUNUSU9OPC9zcGFuPjwvZGl2PgogICAgICAgICAgICAgIDxwPk11bHRpLWNsb3VkIEZpbk9wcyBwbGF0Zm9ybSB0aGF0IGF1dG9tYXRlcyByZXNvdXJjZSBtb25pdG9yaW5nIGFuZCBpbmZyYXN0cnVjdHVyZSBjb3N0IGNvbnRyb2wuPC9wPgogICAgICAgICAgICAgIDx1bD4KICAgICAgICAgICAgICAgIDxsaT5HcmFudWxhciBjb3N0IGFuYWx5dGljcyBhbmQgcHJlZGljdGl2ZSB1c2FnZSB0cmVuZHM8L2xpPgogICAgICAgICAgICAgICAgPGxpPlJpZ2h0c2l6aW5nIGVuZ2luZSBmb3IgaWRsZSBhbmQgdW5kZXJ1dGlsaXplZCByZXNvdXJjZXM8L2xpPgogICAgICAgICAgICAgICAgPGxpPkFub21hbHkgZGV0ZWN0aW9uIHdpdGggY3VzdG9taXphYmxlIGNvc3QgYWxlcnRzPC9saT4KICAgICAgICAgICAgICA8L3VsPgogICAgICAgICAgICAgIDxhIGhyZWY9Imh0dHBzOi8vY2xvdWRmb3Jlc3R4LmNvbS8iIHRhcmdldD0iX2JsYW5rIiByZWw9Im5vb3BlbmVyIj5PcGVuIHByb2R1Y3Qg4oaXPC9hPgogICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgIDwvYXJ0aWNsZT4KCiAgICAgICAgICA8YXJ0aWNsZSBjbGFzcz0icHJvamVjdC1jYXJkIGdsYXNzLWNhcmQgcmV2ZWFsIiBkYXRhLXByb2plY3Q9IkV6eVJ5ZGUiPgogICAgICAgICAgICA8ZGl2IGNsYXNzPSJwcm9qZWN0LWhlYWRlciI+CiAgICAgICAgICAgICAgPHNwYW4gY2xhc3M9InByb2plY3QtbnVtYmVyIj4wNTwvc3Bhbj4KICAgICAgICAgICAgICA8c3BhbiBjbGFzcz0icHJvamVjdC10eXBlIj5NT0JJTElUWSDCtyBFTEVDVFJJQzwvc3Bhbj4KICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICAgIDxkaXYgY2xhc3M9InByb2plY3QtYm9keSI+CiAgICAgICAgICAgICAgPGRpdiBjbGFzcz0icHJvamVjdC10aXRsZS1yb3ciPjxoMz5FenlSeWRlPC9oMz48c3BhbiBjbGFzcz0icHJvamVjdC1zdGF0dXMiPlpFUk8gU1VSR0U8L3NwYW4+PC9kaXY+CiAgICAgICAgICAgICAgPHA+U3VzdGFpbmFibGUgcmlkZS1ib29raW5nIGFwcCBjb25uZWN0aW5nIHJpZGVycyB3aXRoIDEwMCUgZWxlY3RyaWMgYXV0b3MgYW5kIGJpa2VzLjwvcD4KICAgICAgICAgICAgICA8dWw+CiAgICAgICAgICAgICAgICA8bGk+WmVyby1lbWlzc2lvbiBmbGVldCBtYW5hZ2VtZW50IGZvciBlbGVjdHJpYyB2ZWhpY2xlczwvbGk+CiAgICAgICAgICAgICAgICA8bGk+Rml4ZWQtZmFyZSBwcmljaW5nIHdpdGggbm8gc3VyZ2UgcHJpY2luZzwvbGk+CiAgICAgICAgICAgICAgICA8bGk+RHJpdmVyIHZlcmlmaWNhdGlvbiBhbmQgZW1iZWRkZWQgaW5zdXJhbmNlIGNvdmVyYWdlPC9saT4KICAgICAgICAgICAgICA8L3VsPgogICAgICAgICAgICAgIDxhIGhyZWY9Imh0dHBzOi8vZXp5cnlkZS5pbi8iIHRhcmdldD0iX2JsYW5rIiByZWw9Im5vb3BlbmVyIj5PcGVuIHByb2R1Y3Qg4oaXPC9hPgogICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgIDwvYXJ0aWNsZT4KCiAgICAgICAgICA8YXJ0aWNsZSBjbGFzcz0icHJvamVjdC1jYXJkIGdsYXNzLWNhcmQgcmV2ZWFsIiBkYXRhLXByb2plY3Q9Ik9sZFNrb29sQUYiPgogICAgICAgICAgICA8ZGl2IGNsYXNzPSJwcm9qZWN0LWhlYWRlciI+CiAgICAgICAgICAgICAgPHNwYW4gY2xhc3M9InByb2plY3QtbnVtYmVyIj4wNjwvc3Bhbj4KICAgICAgICAgICAgICA8c3BhbiBjbGFzcz0icHJvamVjdC10eXBlIj5FLUNPTU1FUkNFIMK3IEZBU0hJT048L3NwYW4+CiAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICA8ZGl2IGNsYXNzPSJwcm9qZWN0LWJvZHkiPgogICAgICAgICAgICAgIDxkaXYgY2xhc3M9InByb2plY3QtdGl0bGUtcm93Ij48aDM+T2xkU2tvb2xBRjwvaDM+PHNwYW4gY2xhc3M9InByb2plY3Qtc3RhdHVzIj5MSVZFIENPTU1FUkNFPC9zcGFuPjwvZGl2PgogICAgICAgICAgICAgIDxwPkEgbW9kZXJuIGNsb3RoaW5nIHNob3BwaW5nIHBsYXRmb3JtIHdpdGggZnVsbCBlLWNvbW1lcmNlIGZ1bmN0aW9uYWxpdHkgYW5kIGludGVncmF0ZWQgcGF5bWVudCBnYXRld2F5cy48L3A+CiAgICAgICAgICAgICAgPHVsPgogICAgICAgICAgICAgICAgPGxpPkNvbXBsZXRlIHNob3BwaW5nIGZsb3cgZnJvbSBwcm9kdWN0IGRpc2NvdmVyeSB0byBjaGVja291dDwvbGk+CiAgICAgICAgICAgICAgICA8bGk+SW50ZWdyYXRlZCBwYXltZW50IGdhdGV3YXkgZXhwZXJpZW5jZSBmb3Igc2VjdXJlIHRyYW5zYWN0aW9uczwvbGk+CiAgICAgICAgICAgICAgICA8bGk+TW9kZXJuIHN0b3JlZnJvbnQgZm9jdXNlZCBvbiBhIHNtb290aCwgY29udmVyc2lvbi1mcmllbmRseSBleHBlcmllbmNlPC9saT4KICAgICAgICAgICAgICA8L3VsPgogICAgICAgICAgICAgIDxhIGhyZWY9Imh0dHBzOi8vb2xkc2tvb2xhZi5jb20vIiB0YXJnZXQ9Il9ibGFuayIgcmVsPSJub29wZW5lciI+VmlzaXQgb2xkc2tvb2xhZi5jb20g4oaXPC9hPgogICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgIDwvYXJ0aWNsZT4KICAgICAgICA8L2Rpdj4KICAgICAgPC9zZWN0aW9uPgoKICAgICAgPHNlY3Rpb24gY2xhc3M9InNjcmVlbi1zZWN0aW9uIGNvbnRhY3Qtc2NyZWVuIiBpZD0iY29udGFjdCI+CiAgICAgICAgPGRpdiBjbGFzcz0iY29udGFjdC1jYXJkIGdsYXNzLWNhcmQgcmV2ZWFsIj4KICAgICAgICAgIDxkaXYgY2xhc3M9ImNvbnRhY3QtZ2xvdyI+PC9kaXY+CiAgICAgICAgICA8ZGl2IGNsYXNzPSJjb250YWN0LWNvbnRlbnQiPgogICAgICAgICAgICA8c3BhbiBjbGFzcz0iZXllYnJvdyI+MDQgwrcgQ09OVEFDVDwvc3Bhbj4KICAgICAgICAgICAgPGgyPkxldOKAmXMgYnVpbGQgc29tZXRoaW5nPGJyPnRoYXQgZmVlbHMgZWZmb3J0bGVzcy48L2gyPgogICAgICAgICAgICA8cD5IYXZlIGEgcHJvZHVjdCwgcGxhdGZvcm0sIG9yIG1lc3N5IHN5c3RlbSB0aGF0IG5lZWRzIGEgY2FsbSBlbmdpbmVlcmluZyBoYW5kPzwvcD4KICAgICAgICAgICAgPGRpdiBjbGFzcz0iY29udGFjdC1hY3Rpb25zIj4KICAgICAgICAgICAgICA8YSBjbGFzcz0icHJpbWFyeS1idXR0b24gZ2xhc3MtYnV0dG9uIiBocmVmPSJtYWlsdG86YW51cmFnLnNvZnRuZXRAZ21haWwuY29tIj5hbnVyYWcuc29mdG5ldEBnbWFpbC5jb20gPHNwYW4+4oaXPC9zcGFuPjwvYT4KICAgICAgICAgICAgICA8YSBjbGFzcz0ic2Vjb25kYXJ5LWJ1dHRvbiBnbGFzcy1idXR0b24iIGhyZWY9InRlbDorOTE3NDcwNjk1NTg2Ij4rOTEgNzQ3LTA2OS01NTg2PC9hPgogICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgPGRpdiBjbGFzcz0ic29jaWFsLXJvdyI+CiAgICAgICAgICAgICAgPGEgaHJlZj0iaHR0cHM6Ly9naXRodWIuY29tL2FudXJhZ2Rldm5hdGgiIGFyaWEtbGFiZWw9IkdpdEh1YiI+R2l0SHViIOKGlzwvYT4KICAgICAgICAgICAgICA8YSBocmVmPSJodHRwczovL3d3dy5saW5rZWRpbi5jb20vaW4vYW51cmFnZGV2bmF0aC8iIGFyaWEtbGFiZWw9IkxpbmtlZEluIj5MaW5rZWRJbiDihpc8L2E+CiAgICAgICAgICAgICAgPHNwYW4+Tm9pZGEgwrcgSW5kaWE8L3NwYW4+CiAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgPC9kaXY+CiAgICAgICAgPC9kaXY+CiAgICAgIDwvc2VjdGlvbj4KICAgIDwvbWFpbj4KCiAgICA8Zm9vdGVyIGNsYXNzPSJmb290ZXIgZ2xhc3MtcGFuZWwiPgogICAgICA8c3Bhbj5BTlVSQUcgREVWTkFUSDwvc3Bhbj4KICAgICAgPHNwYW4+QlVJTFQgT05FIFNZU1RFTSBBVCBBIFRJTUUuPC9zcGFuPgogICAgPC9mb290ZXI+CiAgPC9kaXY+CgogIDxuYXYgY2xhc3M9Im1vYmlsZS1kb2NrIGdsYXNzLXBhbmVsIiBhcmlhLWxhYmVsPSJNb2JpbGUgbmF2aWdhdGlvbiI+CiAgICA8YSBjbGFzcz0iZG9jay1saW5rIGFjdGl2ZSIgaHJlZj0iI2hvbWUiPjxzcGFuPuKMgjwvc3Bhbj48c21hbGw+SG9tZTwvc21hbGw+PC9hPgogICAgPGEgY2xhc3M9ImRvY2stbGluayIgaHJlZj0iI2Fib3V0Ij48c3Bhbj7il4w8L3NwYW4+PHNtYWxsPkFib3V0PC9zbWFsbD48L2E+CiAgICA8YSBjbGFzcz0iZG9jay1saW5rIiBocmVmPSIjZXhwZXJpZW5jZSI+PHNwYW4+4perPC9zcGFuPjxzbWFsbD5Xb3JrPC9zbWFsbD48L2E+CiAgICA8YSBjbGFzcz0iZG9jay1saW5rIiBocmVmPSIjY29udGFjdCI+PHNwYW4+4oaXPC9zcGFuPjxzbWFsbD5Db250YWN0PC9zbWFsbD48L2E+CiAgPC9uYXY+CgogIDxzY3JpcHQgc3JjPSJza3JwdC5qcyI+PC9zY3JpcHQ+CiAgPHNjcmlwdCBzcmM9InN0ZnUuanMiPjwvc2NyaXB0Pgo8L2JvZHk+CjwvaHRtbD4K"))));</script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#dfe7f2">
+  <title>Anurag Devnath — Software Engineer</title>
+  <meta name="description" content="Anurag Devnath is a software engineer who builds tools for grant management, e-mobility, and e-commerce.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="ambient" aria-hidden="true">
+    <span class="orb orb-a"></span>
+    <span class="orb orb-b"></span>
+    <span class="orb orb-c"></span>
+    <span class="orb orb-d"></span>
+    <span class="ambient-noise"></span>
+  </div>
+
+  <div class="page-shell" id="top">
+    <header class="topbar glass-panel">
+      <a class="brand" href="#top" aria-label="Anurag Devnath home">
+        <span class="brand-mark">AD</span>
+        <span class="brand-copy">
+          <strong>Anurag Devnath</strong>
+          <small>Software Engineer</small>
+        </span>
+      </a>
+
+      <nav class="desktop-nav" aria-label="Primary navigation">
+        <a class="nav-link active" href="#home">Home</a>
+        <a class="nav-link" href="#about">About</a>
+        <a class="nav-link" href="#experience">Experience</a>
+        <a class="nav-link" href="#work">Work</a>
+        <a class="nav-link" href="#contact">Contact</a>
+      </nav>
+
+      <a class="topbar-action glass-pill" href="mailto:anurag.softnet@gmail.com">
+        <span class="online-dot"></span>
+        Available
+        <span class="arrow">↗</span>
+      </a>
+    </header>
+
+    <main>
+      <section class="hero screen-section" id="home">
+        <div class="hero-copy">
+          <div class="status-chip glass-pill reveal">
+            <span class="status-orb"></span>
+            Building software from Noida, India
+          </div>
+
+          <h1 class="hero-title reveal">
+            I build software<br>
+            that is simple<br>
+            <span>and reliable.</span>
+          </h1>
+
+          <p class="hero-description reveal">
+            I am a full-stack engineer at <strong>Thinksys Inc.</strong> I help create reliable web applications and digital platforms using ColdFusion, Python, JavaScript, and SQL.
+          </p>
+
+          <div class="hero-actions reveal">
+            <a class="primary-button glass-button" href="#work">See my work <span>↗</span></a>
+            <a class="secondary-button glass-button" href="mailto:anurag.softnet@gmail.com">Send an email</a>
+          </div>
+
+          <div class="metric-row reveal" aria-label="Career highlights">
+            <div class="metric glass-card">
+              <strong>5+</strong>
+              <span>platforms built</span>
+            </div>
+            <div class="metric glass-card">
+              <strong>99.9%</strong>
+              <span>uptime kept</span>
+            </div>
+            <div class="metric glass-card">
+              <strong>30%</strong>
+              <span>faster speeds</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal" aria-label="Liquid glass portfolio preview">
+          <div class="floating-orbit orbit-one"></div>
+          <div class="floating-orbit orbit-two"></div>
+
+          <div class="glass-card identity-card depth-card">
+            <div class="card-sheen"></div>
+            <div class="identity-top">
+              <span class="micro-label">CURRENT JOB</span>
+              <span class="live-label"><i></i> Active</span>
+            </div>
+            <div class="identity-main">
+              <div class="avatar">AD</div>
+              <div>
+                <h2>Software Engineer</h2>
+                <p>Thinksys Inc. · Noida, India</p>
+              </div>
+            </div>
+            <div class="identity-footer">
+              <span>ColdFusion</span><span>Python</span><span>SQL</span>
+            </div>
+          </div>
+
+          <div class="glass-card mini-card mini-card-top depth-card">
+            <div class="mini-icon">↗</div>
+            <div>
+              <strong>30%</strong>
+              <span>database speed improvement</span>
+            </div>
+          </div>
+
+          <div class="glass-card mini-card mini-card-bottom depth-card">
+            <div class="mini-grid-icon">⌘</div>
+            <div>
+              <strong>20+</strong>
+              <span>live updates released</span>
+            </div>
+          </div>
+
+          <div class="gloss-disc"></div>
+        </div>
+      </section>
+
+      <section class="screen-section section-panel" id="about">
+        <div class="section-heading reveal">
+          <div>
+            <span class="eyebrow">01 · ABOUT ME</span>
+            <h2>I focus on writing<br>clean and practical code.</h2>
+          </div>
+          <p>Good software should just work without users having to think about it.</p>
+        </div>
+
+        <div class="about-layout">
+          <article class="glass-card story-card reveal">
+            <div class="card-topline">
+              <span>BACKGROUND</span>
+              <span>NOIDA · INDIA</span>
+            </div>
+            <p>
+              I work on dependable tools and systems that organizations rely on daily. My core priorities are writing readable code, optimizing databases for speed, and building architecture that stays fast and stable under production workloads.
+            </p>
+            <div class="quote-mark">“</div>
+            <span class="quote-copy">Keep things simple and easy to use.</span>
+          </article>
+
+          <div class="skills-stack reveal">
+            <div class="glass-card skill-card">
+              <div class="skill-index">01</div>
+              <div><span>Frontend</span><strong>HTML5 · CSS3 · JavaScript · Responsive Design</strong></div>
+            </div>
+            <div class="glass-card skill-card">
+              <div class="skill-index">02</div>
+              <div><span>Backend</span><strong>ColdFusion · Python · PHP · Node.js · APIs</strong></div>
+            </div>
+            <div class="glass-card skill-card">
+              <div class="skill-index">03</div>
+              <div><span>Database</span><strong>MS SQL Server · MongoDB · Database Tuning</strong></div>
+            </div>
+            <div class="glass-card skill-card">
+              <div class="skill-index">04</div>
+              <div><span>Tools</span><strong>Git · GitHub · GitLab · Code Deployment</strong></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="screen-section section-panel" id="experience">
+        <div class="section-heading reveal">
+          <div>
+            <span class="eyebrow">02 · WORK EXPERIENCE</span>
+            <h2>My past roles<br>and what I delivered.</h2>
+          </div>
+          <p>A look at my job history and the improvements I made along the way.</p>
+        </div>
+
+        <div class="experience-stack">
+          <article class="glass-card experience-card active-experience reveal">
+            <div class="experience-year">DEC 2025 — NOW</div>
+            <div class="experience-body">
+              <div>
+                <span class="company-kicker"><i></i> CURRENT JOB</span>
+                <h3>Software Engineer · Thinksys Inc.</h3>
+                <p>Noida, Uttar Pradesh</p>
+              </div>
+              <div class="experience-copy">I write and fix ColdFusion code, pushing regular updates to our live projects while making sure the website stays online and functional for users.</div>
+            </div>
+          </article>
+
+          <article class="glass-card experience-card reveal">
+            <div class="experience-year">FEB 2024 — DEC 2025</div>
+            <div class="experience-body">
+              <div>
+                <span class="company-kicker">AROSYS</span>
+                <h3>Software Engineer · Arosys</h3>
+                <p>Bhilai, Chhattisgarh</p>
+              </div>
+              <div class="experience-copy">I helped release over 20 updates using ColdFusion, kept the software running 99.9% of the time, and rewrote database queries to make them load 30% faster.</div>
+            </div>
+          </article>
+
+          <article class="glass-card experience-card reveal">
+            <div class="experience-year">MAR 2024 — MAR 2027</div>
+            <div class="experience-body">
+              <div>
+                <span class="company-kicker">ADOBE</span>
+                <h3>Adobe Certified Professional — ColdFusion</h3>
+                <p><a href="https://certification.adobe.com/credential/verify/97cfe553-f7e8-11ef-9883-42010a40002a" target="_blank" rel="noopener">See certificate ↗</a></p>
+              </div>
+              <div class="experience-copy">I passed this certification to improve my skills with ColdFusion and write better code for my jobs.</div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="screen-section section-panel" id="work">
+        <div class="section-heading reveal">
+          <div>
+            <span class="eyebrow">03 · MY PROJECTS</span>
+            <h2>Featured projects.<br>Targeted solutions.</h2>
+          </div>
+          <p>Here are some of the main applications I have worked on recently.</p>
+        </div>
+
+        <div class="projects-grid">
+          <article class="project-card glass-card reveal" data-project="America Learns">
+            <div class="project-header">
+              <span class="project-number">01</span>
+              <span class="project-type">SOFTWARE · GRANTS</span>
+            </div>
+            <div class="project-body">
+              <div class="project-title-row"><h3>America Learns</h3><span class="project-status">COMPLETED</span></div>
+              <p>A tool used by AmeriCorps and non-profits to manage their grants and applications.</p>
+              <ul>
+                <li>Added features to track work hours and alert users to issues.</li>
+                <li>Set up ways to sign documents online and save them securely.</li>
+                <li>Built forms to help review and grade grant applications.</li>
+              </ul>
+              <a href="https://americalearns.com/" target="_blank" rel="noopener">Visit website ↗</a>
+            </div>
+          </article>
+
+          <article class="project-card glass-card reveal" data-project="EzyRyde">
+            <div class="project-header">
+              <span class="project-number">02</span>
+              <span class="project-type">TRANSPORT · ELECTRIC</span>
+            </div>
+            <div class="project-body">
+              <div class="project-title-row"><h3>EzyRyde</h3><span class="project-status">FAIR PRICING</span></div>
+              <p>A ride-booking app that only uses electric bikes and autos.</p>
+              <ul>
+                <li>Built management tools to organize the electric vehicles.</li>
+                <li>Programmed the app to always show a flat price without surprise fees.</li>
+                <li>Added features to verify driver identities and handle insurance.</li>
+              </ul>
+              <a href="https://ezyryde.in/" target="_blank" rel="noopener">Visit website ↗</a>
+            </div>
+          </article>
+
+          <article class="project-card glass-card reveal" data-project="OldSkoolAF">
+            <div class="project-header">
+              <span class="project-number">03</span>
+              <span class="project-type">SHOPPING · CLOTHING</span>
+            </div>
+            <div class="project-body">
+              <div class="project-title-row"><h3>OldSkoolAF</h3><span class="project-status">ONLINE STORE</span></div>
+              <p>An online clothing store with a checkout system and card payments.</p>
+              <ul>
+                <li>Coded the entire shopping process from finding an item to buying it.</li>
+                <li>Connected payment tools so customers can check out safely.</li>
+                <li>Designed the website to look clean and make shopping easy.</li>
+              </ul>
+              <a href="https://oldskoolaf.com/" target="_blank" rel="noopener">Visit website ↗</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="screen-section contact-screen" id="contact">
+        <div class="contact-card glass-card reveal">
+          <div class="contact-glow"></div>
+          <div class="contact-content">
+            <span class="eyebrow">04 · CONTACT</span>
+            <h2>Let’s build something<br>great together.</h2>
+            <p>Do you need help creating a new app or fixing an old project?</p>
+            <div class="contact-actions">
+              <a class="primary-button glass-button" href="mailto:anurag.softnet@gmail.com">anurag.softnet@gmail.com <span>↗</span></a>
+              <a class="secondary-button glass-button" href="tel:+917470695586">+91 747-069-5586</a>
+            </div>
+            <div class="social-row">
+              <a href="https://github.com/anuragdevnath" aria-label="GitHub">GitHub ↗</a>
+              <a href="https://www.linkedin.com/in/anuragdevnath/" aria-label="LinkedIn">LinkedIn ↗</a>
+              <span>Noida · India</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer glass-panel">
+      <span>ANURAG DEVNATH</span>
+      <span>SOFTWARE ENGINEER</span>
+    </footer>
+  </div>
+
+  <nav class="mobile-dock glass-panel" aria-label="Mobile navigation">
+    <a class="dock-link active" href="#home"><span>⌂</span><small>Home</small></a>
+    <a class="dock-link" href="#about"><span>◌</span><small>About</small></a>
+    <a class="dock-link" href="#experience"><span>◫</span><small>Work</small></a>
+    <a class="dock-link" href="#contact"><span>↗</span><small>Contact</small></a>
+  </nav>
+
+  <script src="script.js"></script>
+</body>
+</html>
